@@ -9,6 +9,6 @@ namespace CRM.Domain.Interfaces
 {
     public interface ITokenService
     {
-        string GeneratorToken(User user);
+        string GenerateToken(User user);
     }
 }
