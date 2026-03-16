@@ -11,6 +11,6 @@ namespace CRM.Domain.Interfaces
     {
         Task<IEnumerable<Contact>> GetByCompanyIdAsync(int companyId);
         Task<IEnumerable<Contact>> GetByUserIdAsync(int userId);
-        Task<IEnumerable<Contact>> SearchASync(string keyword);
+        Task<IEnumerable<Contact>> SearchAsync(string keyword);
     }
 }
