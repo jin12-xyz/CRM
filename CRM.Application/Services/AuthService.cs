@@ -45,7 +45,7 @@ namespace CRM.Application.Services
             {
                 FirstName = request.FirstName,
                 LastName = request.LastName,
-                Email = request.Email,
+                Email = request.Email.ToLower().Trim(),
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password)
             };
 
