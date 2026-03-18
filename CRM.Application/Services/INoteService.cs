@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CRM.Application.Services
 {
-    public interface INoteServices
+    public interface INoteService
     {
         Task<IEnumerable<NoteResponseDto>> GetByContactIdAsync(int contactid);
         Task<NoteResponseDto> CreateAsync(NoteRequestDto request, int userId);
