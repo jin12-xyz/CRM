@@ -8,16 +8,16 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CRM.Application\CRM.Application.csproj" />
     <ProjectReference Include="..\CRM.Infrastructure\CRM.Infrastructure.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

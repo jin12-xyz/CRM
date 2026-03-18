@@ -12,6 +12,7 @@ namespace CRM.Application.Services
         Task<IEnumerable<ContactResponseDto>> GetAllAsync(int userId);
         Task<ContactResponseDto?> GetByIdAsync(int id);
         Task<ContactResponseDto> CreateAsync(ContactRequestDto request, int userId);
+        Task<ContactResponseDto> UpdateAsync(int id, ContactRequestDto request);
         Task<bool> DeleteAsync(int id);
         Task<IEnumerable<ContactResponseDto>> SearchAsync(string keyword);
     }

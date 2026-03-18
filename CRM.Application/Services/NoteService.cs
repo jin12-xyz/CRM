@@ -4,7 +4,7 @@ using CRM.Domain.Interfaces;
 
 namespace CRM.Application.Services
 {
-    public class NoteService : INoteServices
+    public class NoteService : INoteService
     {
         private readonly INoteRepository _noteRepository;
 
